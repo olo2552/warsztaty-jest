@@ -1,0 +1,16 @@
+{
+  "name": "jest-prezentacja",
+  "version": "1.0.0",
+  "description": "Prezentacja dla hackerspace'u",
+  "main": "index.js",
+  "repository": "https://github.com/olo2552/warsztaty-jest.git",
+  "author": "Aleksander Wielgorski",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "testWatch": "jest --watch"
+  },
+  "devDependencies": {
+    "jest": "^20.0.4"
+  }
+}
