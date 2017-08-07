@@ -1,4 +1,4 @@
-const sum = require('../modules/sum1.js')
+const sum = require('../modules/sum.js')
 
 describe('sum function', () => {
 	test('sums 2 numbers, that can be reversed', () => {
@@ -23,16 +23,6 @@ describe('sum function', () => {
 		expect( () => {
 			sum(null, 2)
 		}).toThrow(TypeError)	
-	})
-
-	test('throws TypeError when passed argument is not a number', () => {
-		expect(() => {
-			sum('1', 2)
-		}).toThrow(TypeError)
-
-		expect(() => {
-			sum(true, 2)
-		}).toThrow(TypeError)
 	})
 })
 
