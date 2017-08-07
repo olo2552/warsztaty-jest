@@ -14,25 +14,5 @@ describe('sum function', () => {
 	test('sums unknown quantity of arguments', () => {
 		expect(sum(1, 2, 3)).toBe(6)
 	})
-
-	test('throws TypeError when invalid parameter is passed', () => {
-		expect( () => {
-			sum(undefined, 2)
-		}).toThrow(TypeError)
-
-		expect( () => {
-			sum(null, 2)
-		}).toThrow(TypeError)	
-	})
-
-	test('throws TypeError when passed argument is not a number', () => {
-		expect(() => {
-			sum('1', 2)
-		}).toThrow(TypeError)
-
-		expect(() => {
-			sum(true, 2)
-		}).toThrow(TypeError)
-	})
 })
 
